@@ -1,0 +1,375 @@
+@import url('https://fonts.cdnfonts.com/css/amazon-ember');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Amazon Ember', sans-serif;
+    list-style: none;
+    outline: none;  
+    text-decoration: none;
+}
+
+a{
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    background-color: #010911;
+    display: flex;
+    justify-content: space-around;
+    position:static;
+    width: 100%;
+    height:35px;
+}
+.logo{
+    margin-top: 6px;
+}
+.logo a{
+    /* padding: 5px 15px; */
+    font-size: 18px;
+    color: rgba(242, 244, 246, 0.9);
+    align-items:center;
+    margin-left: 14px;
+}
+.logo img{
+    width: 100px;
+    height: 18px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+ul{
+    list-style: none;
+    background-color: #010911 ;
+    
+}
+ul li{
+    display: inline-block;
+    position: relative;
+}
+ul li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+ul li ul.dropdown a:hover{
+    background-color: #0d0d0d;
+    width:95%;
+    margin-left: 5px;
+}
+ul li ul.dropdown li{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+ul li ul.dropdown{
+    width: 140%;
+    margin-left: 14px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #010911;
+    position:absolute;
+    z-index: 999;
+    display: none;
+    text-wrap:nowrap;
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+    background-color: #272727; 
+}
+ul li:hover a{
+    background-color: #272727;
+    color: #fff;
+    position: relative;
+    width:max-content;
+}
+
+ul li ul.dropdown-signin{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #010911;
+    width: 100%;
+    padding-right: 150px;
+    position:absolute;
+    z-index: 999;
+    display: none;
+}
+ul li ul.dropdown-signin li{
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+ul li:hover ul.dropdown-signin{
+    display: block;
+    background-color: #272727; 
+}
+ul li ul.dropdown-signin a:hover{
+    background-color: #090909;
+    width:100%;
+    text-wrap: nowrap;
+}
+
+/* main */
+
+header{
+    /* position: relative; */
+    min-width: 320px;
+    height: 580px;
+    overflow: hidden;
+    color: #fff;
+}
+.header2{
+    /* position: relative; */
+    min-width: 320px;
+    height: 500px;
+    overflow: hidden;
+    color: #fff;
+}
+
+#poster1{
+    width: 100%;
+    height: 580px;
+    /* object-fit:cover; */
+    padding: 0;
+    margin: 0;
+
+}
+#poster2{
+    width: 100%;
+    height: 500px;
+    /* object-fit:cover; */
+    padding: 0;
+    margin: 0;
+
+}
+
+.text-over-image{
+    background: rgba(0,0,0,0);
+    box-shadow:inset 400px;
+    width: 45%;
+    height: 580px;
+    position: absolute;
+    margin-top: 202px;
+    left: 27%;
+    transform: translate(-50%, -35%);
+    display: inline-block;
+    flex-wrap: wrap;
+    background-image: (to right, #000 40%, transparent 58%);
+    background-position: 100px;
+}
+.text-over-image > h1 {
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-top: 40px;
+    padding: 10px 0px;
+
+}
+
+.text-over-image > p{
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 10;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    overflow: hidden;
+    text-wrap:pretty;
+}
+
+.text-over-image > button{
+    width: 280px;
+    background: #0f79af;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 22px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+.button {
+    color: #fff;
+}
+
+.text-over-image2{
+    /* background: rgba(0,0,0,0); */
+    width: 45%;
+    height: 87.5%;
+    text-align:start;
+    transform: translate(-5%, -99%);
+    background-image:linear-gradient(to right, #000 50%, transparent 68%);
+    background-position: 100px;
+    
+}
+.text-over-image2 > h1 {
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 50px;
+    margin-top: 0px;
+    padding-left: 80px;
+    text-align: left;
+
+}
+
+.text-over-image2 > p{
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 100;
+    padding-left: 80px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+.text-over-image2 > button{
+    width: 280px;
+    background: #0f79af;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 22px;
+    margin-top: 15px;
+    margin-left: 80px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    display: flexbox;
+    -ms-flex-align: center;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 20px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.favChannels{
+    width: 45%;
+    margin:20px 16px;
+}
+
+.favChannels > h1{
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 50px;
+}
+
+.favChannels > p{
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 25px;
+    color: #353333;
+}
+.favChannels > button{
+    width: 280px;
+    background: #0f79af;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.channelBtn{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.channelBtn img{
+    width: 194px;
+    height: 134px;
+    margin: 5px;
+    
+}
+
+.channelBtn img:hover{
+    cursor: pointer;
+    box-shadow: 3px 3px 8px #000, -3px -3px 8px #000;
+}
+
+.fire-tv-header{
+    position: relative;
+    min-width: 320px;
+    height: 500px;
+    overflow: hidden;
+    color: #fff;
+}
+
+.fire-tv-header > img{
+    orientation: portrait;
+    background-position: left top;
+    width: 100%;
+    object-fit: contain;
+}
+
+.fire-over-image{
+    background: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 60%;
+    left: 75%;
+    transform: translate(-50%, -40%);
+}
+
+.fire-head{
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 50px;
+}
+
+.fire-para{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 28px;
+    width: 500px;
+    margin: 30px 0;
+    text-wrap: nowrap;
+}
+
+.fire-over-image > button{
+    width: 280px;
+    background-color: #0f79af;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 14px 22px;
+    margin-top: 15px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    background-color:#272727
+}
+
+#footer-image{
+    width: 120px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.p{
+    color: #0f79af;
+}
+.copy{
+    color: #747474;
+}
